@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ccv2uv3mtf1vo"]
+
+[ext_resource type="Texture2D" uid="uid://b3kms3bvo07al" path="res://addons/TItle Screen.jpg" id="1_4geyq"]
+
+[node name="Settings" type="Node2D" unique_id=1529427951]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1248031677]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.59893924, 0.60062873)
+texture = ExtResource("1_4geyq")
+
+[node name="SettingsTextMain" type="RichTextLabel" parent="." unique_id=1456465795]
+clip_contents = false
+offset_left = 426.0
+offset_top = 99.0
+offset_right = 1637.0
+offset_bottom = 591.0
+theme_override_colors/default_color = Color(0.18039216, 0.24313726, 0.39215687, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 72
+text = "Settings"

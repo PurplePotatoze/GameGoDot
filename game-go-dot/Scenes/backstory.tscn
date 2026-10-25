@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dxug50tpmcquk"]
+
+[ext_resource type="Texture2D" uid="uid://b3kms3bvo07al" path="res://addons/TItle Screen.jpg" id="1_ooecn"]
+
+[node name="Backstory" type="Node2D" unique_id=1790384117]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1589046503]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5999471, 0.5977271)
+texture = ExtResource("1_ooecn")
+
+[node name="SettingsTextMain" type="RichTextLabel" parent="." unique_id=2036465296]
+clip_contents = false
+offset_left = 461.0
+offset_top = 88.0
+offset_right = 1672.0
+offset_bottom = 580.0
+theme_override_colors/default_color = Color(0.18039216, 0.24313726, 0.39215687, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 72
+text = "Lore"

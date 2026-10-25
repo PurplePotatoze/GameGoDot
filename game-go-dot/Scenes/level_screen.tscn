@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://q3xexx4d4ywm"]
+
+[ext_resource type="Texture2D" uid="uid://b3kms3bvo07al" path="res://addons/TItle Screen.jpg" id="1_d40uv"]
+
+[node name="level_screen" type="Node2D" unique_id=26600506]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=719170034]
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 1918.0
+offset_bottom = 1078.0
+scale = Vector2(0.6011674, 0.60197586)
+texture = ExtResource("1_d40uv")
+
+[node name="SettingsTextMain" type="RichTextLabel" parent="." unique_id=280705063]
+clip_contents = false
+offset_left = 351.0
+offset_top = 86.0
+offset_right = 1562.0
+offset_bottom = 578.0
+theme_override_colors/default_color = Color(0.18039216, 0.24313726, 0.39215687, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 72
+text = "Level Select"

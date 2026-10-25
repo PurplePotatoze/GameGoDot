@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://wd8w7tw57h1y"]
+
+[ext_resource type="Texture2D" uid="uid://cm57gwmvrsykx" path="res://addons/Wonderful World of Woks.jpg" id="1_klylv"]
+[ext_resource type="Script" uid="uid://cffhfpav3dgnk" path="res://Scenes/title_screen.gd" id="1_p3fck"]
+
+[node name="TitleScreen" type="Node2D" unique_id=1095367649]
+script = ExtResource("1_p3fck")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1251441543]
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.59946454, 0.6002738)
+texture = ExtResource("1_klylv")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=168591848]
+clip_contents = false
+offset_left = 26.0
+offset_top = 12.0
+offset_right = 1237.0
+offset_bottom = 504.0
+theme_override_colors/default_color = Color(0.18039216, 0.24313726, 0.39215687, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 72
+text = "WONDERFUL WORLD OF WOKS"
+
+[node name="TextEdit" type="TextEdit" parent="Title" unique_id=1283675090]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 610.0
+offset_right = 1118.0
+offset_bottom = 630.0
+theme_override_font_sizes/font_size = 5
+text = "Will Chia 2026 - Hackclub Stardance"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1809820239]
+offset_left = 451.0
+offset_top = 289.0
+offset_right = 676.0
+offset_bottom = 575.0
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=355622786]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Start \"Wok\"ing!"
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1806776455]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Settings"
+
+[node name="Backstory" type="Button" parent="VBoxContainer" unique_id=1755990584]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Lore"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1578136603]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Backstory" to="." method="_on_backstory_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
