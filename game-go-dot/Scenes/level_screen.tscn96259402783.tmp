@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://q3xexx4d4ywm"]
+
+[ext_resource type="Texture2D" uid="uid://b3kms3bvo07al" path="res://addons/TItle Screen.jpg" id="1_d40uv"]
+[ext_resource type="Script" uid="uid://b3d7vric77eb8" path="res://Scenes/level_screen.gd" id="1_glb20"]
+[ext_resource type="Texture2D" uid="uid://cntadsv8ohsae" path="res://addons/Heart.png" id="3_2d5gf"]
+
+[node name="level_screen" type="Node2D" unique_id=26600506]
+script = ExtResource("1_glb20")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=719170034]
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 1918.0
+offset_bottom = 1078.0
+scale = Vector2(0.6011674, 0.60197586)
+texture = ExtResource("1_d40uv")
+
+[node name="SettingsTextMain" type="RichTextLabel" parent="." unique_id=280705063]
+clip_contents = false
+offset_left = 351.0
+offset_top = 86.0
+offset_right = 1562.0
+offset_bottom = 578.0
+theme_override_colors/default_color = Color(0.18039216, 0.24313726, 0.39215687, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/normal_font_size = 72
+text = "Level Select"
+
+[node name="HeartContainer" type="HBoxContainer" parent="." unique_id=134558863]
+offset_left = 76.0
+offset_top = 175.0
+offset_right = 1082.0
+offset_bottom = 373.0
+
+[node name="Heart" type="TextureRect" parent="HeartContainer" unique_id=2000521397]
+layout_mode = 2
+texture = ExtResource("3_2d5gf")
+expand_mode = 2
+
+[node name="Heart2" type="TextureRect" parent="HeartContainer" unique_id=59644886]
+layout_mode = 2
+texture = ExtResource("3_2d5gf")
+expand_mode = 2
+
+[node name="Heart3" type="TextureRect" parent="HeartContainer" unique_id=1878417377]
+layout_mode = 2
+texture = ExtResource("3_2d5gf")
+expand_mode = 2
+
+[node name="Heart4" type="TextureRect" parent="HeartContainer" unique_id=218625505]
+layout_mode = 2
+texture = ExtResource("3_2d5gf")
+expand_mode = 2
+
+[node name="Heart5" type="TextureRect" parent="HeartContainer" unique_id=694491714]
+layout_mode = 2
+texture = ExtResource("3_2d5gf")
+expand_mode = 2
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1015148849]
+offset_left = 509.0
+offset_top = 415.0
+offset_right = 662.0
+offset_bottom = 483.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 40
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1507945179]
+offset_left = 553.0
+offset_top = 470.0
+offset_right = 692.0
+offset_bottom = 564.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "0.0"
