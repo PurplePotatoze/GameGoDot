@@ -1,3 +1,26 @@
 [gd_scene format=3 uid="uid://baqf18cdgytfx"]
 
-[node name="Minigame" type="Node2D" unique_id=1221130741]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kqi0m"]
+size = Vector2(1160, 43.5)
+
+[node name="Minigame_1" type="Node2D" unique_id=1221130741]
+position = Vector2(-3, 606)
+
+[node name="ScrollingBackground" type="ParallaxLayer" parent="." unique_id=2069838082]
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1743354720]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Platform" type="StaticBody2D" parent="." unique_id=6144190]
+
+[node name="ColorRect" type="ColorRect" parent="Platform" unique_id=1881289976]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.883911, 1.056993)
+color = Color(0.14438942, 0.6756039, 1.92523e-07, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=358192482]
+position = Vector2(579, 21.75)
+shape = SubResource("RectangleShape2D_kqi0m")

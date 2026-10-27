@@ -1,3 +1,21 @@
 [gd_scene format=3 uid="uid://dggh3ev470g1q"]
 
-[node name="Node2D" type="Node2D" unique_id=877915221]
+[ext_resource type="Texture2D" uid="uid://d2a4wsm1of6gc" path="res://addons/Spactchy.png" id="1_j2wod"]
+[ext_resource type="Script" uid="uid://cndaaa6vl0eat" path="res://Scenes/Playerr.gd" id="1_v1qfn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cc1uv"]
+radius = 1214.0593
+
+[node name="Player" type="CharacterBody2D" unique_id=1973328405]
+script = ExtResource("1_v1qfn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1295704467]
+texture = ExtResource("1_j2wod")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1495088311]
+shape = SubResource("CircleShape2D_cc1uv")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1527376081]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1994075253]
+shape = SubResource("CircleShape2D_cc1uv")
